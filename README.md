@@ -1,6 +1,6 @@
-# 🚀 HSR Otimizações Windows — Coleção Completa
+# 🚀 Otimizações Windows — Coleção Completa
 
-> Coleção de scripts `.bat` e arquivos `.reg` baseada nos tutoriais do canal **[HSRoficial](https://www.youtube.com/@HSRoficial)** no YouTube.  
+> Coleção de scripts `.bat` e arquivos `.reg`
 > Foco total em **mais FPS**, **menos input lag** e **melhor desempenho** em jogos.
 
 ---
@@ -18,7 +18,7 @@
 ## 📁 Estrutura do Repositório
 
 ```
-HSR-Otimizacoes-Windows/
+Otimizacoes-Windows/
 │
 ├── bat/
 │   ├── CpuPriority.bat              # Configura prioridade de CPU por executável
@@ -69,18 +69,3 @@ HSR-Otimizacoes-Windows/
 | `09_SvchostSplit.reg` | `Control\svchost` | Otimiza divisão de processos por RAM |
 | `10_AllTweaks.reg` | Múltiplas chaves | Todos os tweaks de uma vez |
 
----
-
-## 📺 Canal de Referência
-
-Todos os tweaks foram documentados a partir dos vídeos do **HSRoficial**:
-
-- 🔗 YouTube: [youtube.com/@HSRoficial](https://www.youtube.com/@HSRoficial)
-- 📸 Instagram: [instagram.com/hsroficial](https://instagram.com/hsroficial)
-
----
-
-## 📝 Licença
-
-Este repositório é apenas uma **documentação/organização** dos tweaks ensinados publicamente no canal HSRoficial.  
-Todo crédito ao criador original. ✅
