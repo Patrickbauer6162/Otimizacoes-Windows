@@ -1,0 +1,45 @@
+Windows Registry Editor Version 5.00
+
+; ============================================================
+; HSRoficial - TODOS OS TWEAKS EM UM ARQUIVO
+; Referencia: youtube.com/@HSRoficial
+; ATENCAO: Crie ponto de restauracao antes de aplicar!
+; ============================================================
+
+; --- 1. NetworkThrottling + SystemResponsiveness ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"NetworkThrottlingIndex"=dword:ffffffff
+"SystemResponsiveness"=dword:00000000
+
+; --- 2. GPU e CPU Priority para Jogos (MMCSS) ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"GPU Priority"=dword:00000008
+"Priority"=dword:00000006
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+
+; --- 3. Desativar MPO (anti-stutter) ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
+"OverlayTestMode"=dword:00000005
+
+; --- 4. Input Lag Mouse ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters]
+"MouseDataQueueSize"=dword:0000001e
+
+; --- 5. Input Lag Teclado ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters]
+"KeyboardDataQueueSize"=dword:0000001e
+
+; --- 6. SvcHost Split (ajuste para sua RAM - padrao 16GB) ---
+; Altere o valor conforme sua RAM:
+; 4GB=3F00000 | 6GB=5F40000 | 8GB=7F80000 | 16GB=FF00000 | 32GB=1FE00000
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"SvcHostSplitThresholdInKB"=dword:01000000
+
+; ============================================================
+; NOTA: Os tweaks de DisableDynamicPstate e DisableHDCP
+; requerem o GUID especifico da sua GPU e nao podem ser
+; aplicados genericamente. Consulte os arquivos individuais
+; 04_DisableDynamicPstate.reg e 05_DisableHDCP.reg para
+; instrucoes de como encontrar o GUID correto.
+; ============================================================
